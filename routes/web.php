@@ -30,3 +30,13 @@ Route::get('/contact', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+
+Route::get('/cyril', function () {
+    return view('cyril', ['age' => '23']);
+});
+
+
+Route::get('/elias', function () {
+    return view('elias', ['lieu' => 'Molenbeek']);
+});
